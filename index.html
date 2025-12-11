@@ -1,13 +1,149 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Agency</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    
-    <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Love Travel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-row">
+        <a class="logo" href="#">
+          <img class="logo-img" src="./images/navbarlogoia.png" alt="Love Travel" />
+        </a>
+
+        <nav class="nav" id="mainNav">
+          <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link is-active" href="#">Home</a></li>
+
+            <li class="nav-item has-drop">
+              <button class="nav-link nav-btn" type="button">
+                Travel <i class="fa-solid fa-angle-down"></i>
+              </button>
+              <ul class="drop">
+                <li><a href="#">Travel One</a></li>
+                <li><a href="#">Travel Two</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item has-drop">
+              <button class="nav-link nav-btn" type="button">
+                Pages <i class="fa-solid fa-angle-down"></i>
+              </button>
+              <ul class="drop">
+                <li><a href="#">About</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item has-drop">
+              <button class="nav-link nav-btn" type="button">
+                Shop <i class="fa-solid fa-angle-down"></i>
+              </button>
+              <ul class="drop">
+                <li><a href="#">Shop List</a></li>
+                <li><a href="#">Cart</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item has-drop">
+              <button class="nav-link nav-btn" type="button">
+                Blog <i class="fa-solid fa-angle-down"></i>
+              </button>
+              <ul class="drop">
+                <li><a href="#">Blog Grid</a></li>
+                <li><a href="#">Single Post</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button class="hamburger" id="hamburgerBtn" type="button" aria-label="Menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <button class="search-btn" id="searchBtn" type="button">Search</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="gallery">
+        <div class="container">
+          <div class="gallery-row">
+            <button class="arrow arrow-left" id="prevBtn" type="button" aria-label="Previous">
+              <i class="fa-solid fa-angle-left"></i>
+            </button>
+
+            <div class="pic" id="pic1" role="img" aria-label="Travel photo 1"></div>
+            <div class="pic" id="pic2" role="img" aria-label="Travel photo 2"></div>
+            <div class="pic" id="pic3" role="img" aria-label="Travel photo 3"></div>
+
+            <button class="arrow arrow-right" id="nextBtn" type="button" aria-label="Next">
+              <i class="fa-solid fa-angle-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="trip-info">
+        <div class="container trip-row">
+          <div class="place">
+            <h2 class="place-title">Chiang Mai</h2>
+            <div class="place-sub">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Thailand</span>
+            </div>
+          </div>
+
+          <div class="facts">
+            <div class="fact">
+              <div class="fact-icon">
+                <img src="./images/div.elementor-icon.png" alt="" />
+              </div>
+              <div class="fact-text">
+                <div class="fact-label">Durations</div>
+                <div class="fact-value">1 Week</div>
+              </div>
+            </div>
+
+            <div class="fact">
+              <div class="fact-icon">
+                <img src="./images/roadicon.png" alt="" />
+              </div>
+              <div class="fact-text">
+                <div class="fact-label">Difficulty</div>
+                <div class="fact-value">Easy</div>
+              </div>
+            </div>
+
+            <div class="fact">
+              <div class="fact-icon">
+                <img src="./images/patarakaci.png" alt="" />
+              </div>
+              <div class="fact-text">
+                <div class="fact-label">Min Age</div>
+                <div class="fact-value">0</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
