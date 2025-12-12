@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Love Travel</title>
+    <title>Travel Agency</title>
+      <link rel="icon" type="image/png" href="./images/patarakaci.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,45 +28,10 @@
           <ul class="nav-list">
             <li class="nav-item"><a class="nav-link is-active" href="#">Home</a></li>
 
-            <li class="nav-item has-drop">
-              <button class="nav-link nav-btn" type="button">
-                Travel <i class="fa-solid fa-angle-down"></i>
-              </button>
-              <ul class="drop">
-                <li><a href="#">Travel One</a></li>
-                <li><a href="#">Travel Two</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item has-drop">
-              <button class="nav-link nav-btn" type="button">
-                Pages <i class="fa-solid fa-angle-down"></i>
-              </button>
-              <ul class="drop">
-                <li><a href="#">About</a></li>
-                <li><a href="#">FAQ</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item has-drop">
-              <button class="nav-link nav-btn" type="button">
-                Shop <i class="fa-solid fa-angle-down"></i>
-              </button>
-              <ul class="drop">
-                <li><a href="#">Shop List</a></li>
-                <li><a href="#">Cart</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item has-drop">
-              <button class="nav-link nav-btn" type="button">
-                Blog <i class="fa-solid fa-angle-down"></i>
-              </button>
-              <ul class="drop">
-                <li><a href="#">Blog Grid</a></li>
-                <li><a href="#">Single Post</a></li>
-              </ul>
-            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Travel</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Pages</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
 
             <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
           </ul>
@@ -84,17 +50,9 @@
       <section class="gallery">
         <div class="container">
           <div class="gallery-row">
-            <button class="arrow arrow-left" id="prevBtn" type="button" aria-label="Previous">
-              <i class="fa-solid fa-angle-left"></i>
-            </button>
-
             <div class="pic" id="pic1" role="img" aria-label="Travel photo 1"></div>
             <div class="pic" id="pic2" role="img" aria-label="Travel photo 2"></div>
             <div class="pic" id="pic3" role="img" aria-label="Travel photo 3"></div>
-
-            <button class="arrow arrow-right" id="nextBtn" type="button" aria-label="Next">
-              <i class="fa-solid fa-angle-right"></i>
-            </button>
           </div>
         </div>
       </section>
@@ -140,6 +98,368 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="details">
+        <div class="container details-row">
+          <div class="details-left">
+            <h2 class="details-title">Enjoy the Adventure</h2>
+            <p class="details-text">
+              Are you looking for an adventure of a lifetime? Join us on an unforgettable journey through some of the
+              world's most stunning landscapes and cultural destinations. Our expertly curated tours take you to
+              incredible destinations, from the rugged mountains of Patagonia to the vibrant cities of Asia. Our
+              itineraries are designed to immerse you in the local culture, with opportunities to meet locals, try new
+              foods, and learn about the history and traditions of each destination. Our experienced guides will lead
+              you through each destination, sharing their knowledge and passion for travel. We offer a range of
+              activities to suit every traveler, from hiking and kayaking to cultural tours and culinary experiences.
+            </p>
+            <p class="details-text">
+              Our accommodations are carefully selected for comfort and convenience, with options to suit every budget.
+              Whether you prefer luxurious hotels or cozy homestays, we have something for everyone. At every step of
+              the journey, we prioritize sustainability and responsible tourism. We work with local communities to
+              ensure that our tours have a positive impact on the environment and the people we meet along the way.
+              Join us on a journey of discovery and exploration, and discover the world's most incredible destinations
+              with us.
+            </p>
+
+            <div class="details-divider"></div>
+
+            <h2 class="details-title">Included / Excluded</h2>
+            <p class="details-text small">
+              To help you plan your trip, we have put together a list of what's included and what's not included in
+              your tour package. This will give you a clear understanding of what to expect and help you make any
+              necessary arrangements before your journey begins.
+            </p>
+
+            <div class="lists">
+              <ul class="list good">
+                <li>Train tickets and Bus transportation</li>
+                <li>Breakfast, lunch, and dinner.</li>
+                <li>Accommodation at hotel</li>
+                <li>Train tickets and Bus transportation</li>
+              </ul>
+
+              <div class="lists-right">
+                <ul class="list good">
+                  <li>Professional tour guide</li>
+                  <li>Transfers between destinations</li>
+                </ul>
+
+                <ul class="list bad">
+                  <li>Entrance fees to museums</li>
+                  <li>Custom itinerary</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <aside class="booking">
+            <div class="booking-card">
+              <div class="price-row">
+                <div class="price-left">
+                  <div class="price-label">Price</div>
+                  <div class="price-from">From</div>
+                </div>
+                <div class="price-value">
+                  <span class="price-dollar">$</span>
+                  <span id="totalPrice">490</span>
+                </div>
+              </div>
+
+              <div class="tabs">
+                <button class="tab is-active" id="tabBooking" type="button">Booking Form</button>
+                <div class="tab-line"></div>
+                <button class="tab" id="tabEnquiry" type="button">Enquiry Form</button>
+              </div>
+
+              <div class="tab-panels">
+                <div class="panel is-active" id="panelBooking">
+                  <div class="field">
+                    <div class="field-title">Date</div>
+                    <input class="input" id="dateInput" type="date" />
+                  </div>
+
+                  <div class="field counter">
+                    <div class="counter-left">
+                      <div class="field-title">Adults</div>
+                      <div class="field-sub">Over 18 ( $ 490 )</div>
+                    </div>
+                    <div class="counter-right">
+                      <button class="count-btn" id="adultMinus" type="button">-</button>
+                      <div class="count-num" id="adultCount">1</div>
+                      <button class="count-btn" id="adultPlus" type="button">+</button>
+                    </div>
+                  </div>
+
+                  <div class="field counter">
+                    <div class="counter-left">
+                      <div class="field-title">Children</div>
+                      <div class="field-sub">Under 18 ( $ 200 )</div>
+                    </div>
+                    <div class="counter-right">
+                      <button class="count-btn" id="childMinus" type="button">-</button>
+                      <div class="count-num" id="childCount">0</div>
+                      <button class="count-btn" id="childPlus" type="button">+</button>
+                    </div>
+                  </div>
+
+                  <div class="field">
+                    <div class="field-title">Extra Services</div>
+                    <div class="field-sub">Add extra services on your reservation</div>
+                    <label class="check">
+                      <input id="insHealth" type="checkbox" />
+                      <span>Health Insurance ( $ 220 )</span>
+                    </label>
+                    <label class="check">
+                      <input id="insMedical" type="checkbox" />
+                      <span>Medical Insurance ( $ 45 )</span>
+                    </label>
+                  </div>
+
+                  <button class="book-btn" id="bookBtn" type="button">BOOK NOW FOR $ 490</button>
+                </div>
+
+                <div class="panel" id="panelEnquiry">
+                  <div class="field">
+                    <div class="field-title">Your Name</div>
+                    <input class="input" id="enquiryName" type="text" placeholder="Name" />
+                  </div>
+                  <div class="field">
+                    <div class="field-title">Your Email</div>
+                    <input class="input" id="enquiryEmail" type="email" placeholder="Email" />
+                  </div>
+                  <div class="field">
+                    <div class="field-title">Message</div>
+                    <textarea class="input area" id="enquiryMsg" placeholder="Write your message"></textarea>
+                  </div>
+                  <button class="book-btn" id="sendEnquiryBtn" type="button">SEND ENQUIRY</button>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="tour-map">
+        <div class="container">
+          <div class="section-line"></div>
+          <div class="section-inner">
+            <h2 class="tour-title">Tour Map</h2>
+            <p class="tour-text">
+              This comprehensive map is designed to guide you through an exciting journey filled with remarkable
+              destinations and captivating experiences.
+            </p>
+
+            <div class="map-wrap">
+              <iframe
+                class="map-frame"
+                title="Chiang Mai Map"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps?q=Chiang%20Mai&z=13&output=embed"
+              ></iframe>
+            </div>
+          </div>
+          <div class="section-line"></div>
+        </div>
+      </section>
+
+      <section class="itinerary">
+        <div class="container">
+          <div class="section-line"></div>
+          <div class="section-inner">
+            <h2 class="it-title">Itinerary</h2>
+            <p class="it-text">
+              We have carefully planned out each day to give you the best possible experience. From exploring historic
+              landmarks to tasting delicious local cuisine, each day is packed with adventure and excitement. Join us
+              as we take you on a journey through some of the most fascinating destinations in the world.
+            </p>
+
+            <div class="it-list">
+              <div class="it-item">
+                <button class="it-row is-open" type="button">
+                  <span class="it-left">
+                    <span class="it-day">DAY 1</span>
+                    <span class="it-name">- Arrival and Orientation</span>
+                  </span>
+                  <span class="it-right"><i class="fa-solid fa-angle-right"></i></span>
+                </button>
+                <div class="it-panel">
+                  Meet your guide, check in, and get a quick orientation about the trip and the city.
+                </div>
+              </div>
+
+              <div class="it-item">
+                <button class="it-row" type="button">
+                  <span class="it-left">
+                    <span class="it-day">DAY 2</span>
+                    <span class="it-name">- City Tour</span>
+                  </span>
+                  <span class="it-right"><i class="fa-solid fa-angle-right"></i></span>
+                </button>
+                <div class="it-panel">
+                  Explore key spots around the city, local markets, and famous landmarks with a guide.
+                </div>
+              </div>
+
+              <div class="it-item">
+                <button class="it-row" type="button">
+                  <span class="it-left">
+                    <span class="it-day">DAY 3</span>
+                    <span class="it-name">- Cooking Class</span>
+                  </span>
+                  <span class="it-right"><i class="fa-solid fa-angle-right"></i></span>
+                </button>
+                <div class="it-panel">
+                  Learn to cook local dishes and enjoy the meal you prepare with the group.
+                </div>
+              </div>
+
+              <div class="it-item">
+                <button class="it-row" type="button">
+                  <span class="it-left">
+                    <span class="it-day">DAY 4</span>
+                    <span class="it-name">- Nature Hike</span>
+                  </span>
+                  <span class="it-right"><i class="fa-solid fa-angle-right"></i></span>
+                </button>
+                <div class="it-panel">
+                  Take a guided hike and enjoy scenic viewpoints and nature around Chiang Mai.
+                </div>
+              </div>
+
+              <div class="it-item">
+                <button class="it-row" type="button">
+                  <span class="it-left">
+                    <span class="it-day">DAY 5</span>
+                    <span class="it-name">- Free Day</span>
+                  </span>
+                  <span class="it-right"><i class="fa-solid fa-angle-right"></i></span>
+                </button>
+                <div class="it-panel">
+                  A flexible day for shopping, relaxing, or optional activities depending on your mood.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section-line"></div>
+        </div>
+      </section>
+
+      <section class="gallery-section">
+        <div class="container">
+          <div class="section-line"></div>
+          <div class="section-inner">
+            <h2 class="g-title">Gallery</h2>
+            <p class="g-text">
+              Each image tells a unique story, inviting us into a world of emotion, beauty, and complexity. Get ready to
+              be moved, inspired, and challenged as we journey through this captivating collection of images.
+            </p>
+
+            <div class="g-grid">
+              <img class="g-img" src="./images/carousel1.jpg" alt="Gallery photo 1" />
+              <img class="g-img" src="./images/carousel2.jpg" alt="Gallery photo 2" />
+              <img class="g-img" src="./images/carousel3.jpg" alt="Gallery photo 3" />
+              <img class="g-img" src="./images/gallery1.jpg" alt="Gallery photo 4" />
+              <img class="g-img" src="./images/gallery2.jpg" alt="Gallery photo 5" />
+              <img class="g-img" src="./images/gallery3.jpg" alt="Gallery photo 6" />
+            </div>
+          </div>
+          <div class="section-line"></div>
+        </div>
+      </section>
+
+      <section class="packages">
+        <div class="container">
+          <div class="section-line"></div>
+          <div class="section-inner">
+            <div class="pk-top">Check All</div>
+            <h2 class="pk-title">Packages</h2>
+
+            <div class="pk-grid">
+              <div class="pk-card">
+                <div class="pk-img">
+                  <img src="./images/athenes.jpg" alt="Athens" />
+                  <div class="pk-days"><i class="fa-regular fa-clock"></i> 10 Days</div>
+                </div>
+
+                <div class="pk-body">
+                  <div class="pk-name">Athenes</div>
+                  <div class="pk-loc"><i class="fa-solid fa-location-dot"></i> Greece</div>
+                  <div class="pk-line"></div>
+                  <div class="pk-desc">
+                    Immerse yourself in the history and culture of this ancient city as you explore the stunning
+                    Acropolis.
+                  </div>
+                  <div class="pk-line"></div>
+                  <div class="pk-bottom">
+                    <div class="pk-price">
+                      <div class="pk-from">From</div>
+                      <div class="pk-money">$ 677</div>
+                    </div>
+                    <button class="pk-btn pk-purple" type="button" data-name="Athenes" data-price="677">
+                      Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pk-card">
+                <div class="pk-img">
+                  <img src="./images/carousel2.jpg" alt="Athens" />
+                  <div class="pk-days"><i class="fa-regular fa-clock"></i> 15 Days</div>
+                </div>
+
+                <div class="pk-body">
+                  <div class="pk-name">Azure Coast</div>
+                  <div class="pk-loc"><i class="fa-solid fa-location-dot"></i> France</div>
+                  <div class="pk-line"></div>
+                  <div class="pk-desc">
+                    Escape to the azure coast and discover a world of breathtaking beauty and tranquility of coastline.
+                  </div>
+                  <div class="pk-line"></div>
+                  <div class="pk-bottom">
+                    <div class="pk-price">
+                      <div class="pk-from">From</div>
+                      <div class="pk-money">$ 400</div>
+                    </div>
+                    <button class="pk-btn pk-teal" type="button" data-name="Azure Coast" data-price="400">
+                      Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pk-card">
+                <div class="pk-img">
+                  <img src="./images/carousel3.jpg" alt="Bangkok" />
+                  <div class="pk-days"><i class="fa-regular fa-clock"></i> 10 Days</div>
+                </div>
+
+                <div class="pk-body">
+                  <div class="pk-name">Bangkok</div>
+                  <div class="pk-loc"><i class="fa-solid fa-location-dot"></i> Thailand</div>
+                  <div class="pk-line"></div>
+                  <div class="pk-desc">
+                    Marvelous culinary and cultural trip to the Thai capital with its wonderful monuments and Buddha
+                    statues.
+                  </div>
+                  <div class="pk-line"></div>
+                  <div class="pk-bottom">
+                    <div class="pk-price">
+                      <div class="pk-from">From</div>
+                      <div class="pk-money">$ 1000</div>
+                    </div>
+                    <button class="pk-btn pk-purple" type="button" data-name="Bangkok" data-price="1000">
+                      Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section-line"></div>
         </div>
       </section>
     </main>
