@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Agency - Packages</title>
+    <link rel="icon" type="image/png" href="./images/patarakaci.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body class="packages-page">
+    <header class="header">
+      <div class="container header-row">
+        <a class="logo" href="./index.html">
+          <img class="logo-img" src="./images/navbarlogoia.png" alt="Travel Agency" />
+        </a>
+
+        <nav class="nav" id="mainNav">
+          <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link is-active" href="./packages.html">Packages</a></li>
+            <li class="nav-item"><a class="nav-link" href="./prices.html">Prices</a></li>
+            <li class="nav-item"><a class="nav-link" href="./shop.html">Shop</a></li>
+            <li class="nav-item"><a class="nav-link" href="./contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button class="hamburger" id="hamburgerBtn" type="button" aria-label="Menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <button class="search-btn" id="searchBtn" type="button">Search</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="packages-hero">
+        <div class="packages-hero-inner">
+          <h1 class="packages-hero-title">Our Packages</h1>
+
+          <div class="packages-hero-bottom">
+            <div class="packages-filters">
+              <button class="filter-btn" id="filterPrice" type="button">
+                PRICE <i class="fa-solid fa-angle-down"></i>
+              </button>
+              <button class="filter-btn" id="filterName" type="button">
+                NAME <i class="fa-solid fa-angle-down"></i>
+              </button>
+
+              <div class="filter-menu" id="menuPrice">
+                <button type="button" data-v="default">Default</button>
+                <button type="button" data-v="low">Low to High</button>
+                <button type="button" data-v="high">High to Low</button>
+              </div>
+
+              <div class="filter-menu" id="menuName">
+                <button type="button" data-v="az">A - Z</button>
+                <button type="button" data-v="za">Z - A</button>
+              </div>
+            </div>
+
+            <div class="packages-views">
+              <button class="view-btn" id="viewList" type="button" aria-label="List view">
+                <span class="view-icon view-list"></span>
+              </button>
+              <button class="view-btn is-active" id="viewGrid" type="button" aria-label="Grid view">
+                <span class="view-icon view-grid"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="packages-listing">
+        <div class="container packages-layout">
+          <aside class="packages-sidebar">
+            <div class="side-block">
+              <div class="side-label">Select your destination :</div>
+              <select class="side-select" id="pkgDest">
+                <option value="all">All Destinations</option>
+                <option value="thailand">Thailand</option>
+                <option value="japan">Japan</option>
+                <option value="greece">Greece</option>
+              </select>
+            </div>
+
+            <div class="side-block">
+              <div class="side-label">Select your date :</div>
+              <input class="side-input" id="pkgDate" type="date" />
+            </div>
+
+            <div class="side-block">
+              <div class="side-label">Typologies :</div>
+              <div class="checks-grid">
+                <label class="side-check"><input type="checkbox" value="sports" class="pkgType" /> Sports Activities</label>
+                <label class="side-check"><input type="checkbox" value="heritage" class="pkgType" /> Heritage Tours</label>
+                <label class="side-check"><input type="checkbox" value="budget" class="pkgType" /> Budget Travel</label>
+                <label class="side-check"><input type="checkbox" value="eco" class="pkgType" /> Eco-tourism</label>
+                <label class="side-check"><input type="checkbox" value="beach" class="pkgType" /> Beach Holidays</label>
+                <label class="side-check"><input type="checkbox" value="family" class="pkgType" /> Family-Friendly</label>
+                <label class="side-check"><input type="checkbox" value="road" class="pkgType" /> Road Trips</label>
+                <label class="side-check"><input type="checkbox" value="culinary" class="pkgType" /> Culinary Tourism</label>
+                <label class="side-check"><input type="checkbox" value="adventure" class="pkgType" /> Adventure Travel</label>
+                <label class="side-check"><input type="checkbox" value="culture" class="pkgType" /> Cultural Tours</label>
+              </div>
+            </div>
+
+            <div class="side-block">
+              <div class="side-label">Max Price :</div>
+              <div class="range-row">
+                <input id="pkgMax" type="range" min="0" max="5000" value="5000" />
+                <div class="range-val">$ <span id="pkgMaxVal">5000</span></div>
+              </div>
+              <label class="side-check small"><input id="pkgPromo" type="checkbox" /> see only promotions</label>
+            </div>
+
+            <div class="side-block">
+              <button class="side-head" type="button" data-target="durationsBox">
+                Durations :
+                <i class="fa-solid fa-angle-down"></i>
+              </button>
+              <div class="side-box" id="durationsBox">
+                <label class="side-check"><input type="checkbox" value="7" class="pkgDur" /> 1 Week</label>
+                <label class="side-check"><input type="checkbox" value="15" class="pkgDur" /> 15 Days</label>
+                <label class="side-check"><input type="checkbox" value="10" class="pkgDur" /> 10 Days</label>
+                <label class="side-check"><input type="checkbox" value="5" class="pkgDur" /> 5 Days</label>
+              </div>
+            </div>
+
+            <div class="side-block">
+              <button class="side-head" type="button" data-target="diffBox">
+                Difficulty :
+                <i class="fa-solid fa-angle-down"></i>
+              </button>
+              <div class="side-box" id="diffBox">
+                <label class="side-check"><input type="checkbox" value="challenging" class="pkgDiff" /> Challenging</label>
+                <label class="side-check"><input type="checkbox" value="easy" class="pkgDiff" /> Easy</label>
+                <label class="side-check"><input type="checkbox" value="difficult" class="pkgDiff" /> Difficult</label>
+                <label class="side-check"><input type="checkbox" value="medium" class="pkgDiff" /> Medium</label>
+              </div>
+            </div>
+
+            <div class="side-block">
+              <button class="side-head" type="button" data-target="ageBox">
+                Min Age :
+                <i class="fa-solid fa-angle-down"></i>
+              </button>
+              <div class="side-box" id="ageBox">
+                <label class="side-check"><input type="checkbox" value="0" class="pkgAge" /> 0</label>
+                <label class="side-check"><input type="checkbox" value="18" class="pkgAge" /> 18</label>
+                <label class="side-check"><input type="checkbox" value="16" class="pkgAge" /> 16</label>
+                <label class="side-check"><input type="checkbox" value="5" class="pkgAge" /> 5</label>
+              </div>
+            </div>
+          </aside>
+
+          <section class="packages-results">
+            <div class="cards-grid" id="pkgCards"></div>
+
+            <div class="pkg-pagination" id="pkgPagination"></div>
+          </section>
+        </div>
+      </section>
+
+      <section class="footer-banner">
+        <div class="container footer-row">
+          <div class="footer-left">
+            <h2 class="footer-title">
+              Travel beyond your <br />
+              imagination, with our <br />
+              Travel Agency!
+            </h2>
+          </div>
+
+          <div class="footer-right">
+            <div class="footer-box">
+              <div class="footer-head">Address</div>
+              <div class="footer-text">1080 Brickell Ave</div>
+              <div class="footer-text">Miami - Florida</div>
+              <div class="footer-text">U.S. of America</div>
+
+              <div class="footer-social">
+                <a
+                  target="_blank"
+                  href="https://www.google.com/search?sca_esv=0cd21280a133ee01&sxsrf=AE3TifOq5XvUzs42ACA1Q8O9Z_zPLiSHOw:1765581733471&udm=2&fbs=AIIjpHzZzB2ZqEE71Te1HhZB2eS5CB8DXh_Vz1MtU1PbrsfE5evFSw0z9rcUb0iAP2Q2MBk54AvObt4DR69vsBH9RvnhpA50etHoLGYWuDeKcLgleW_bn8eYGMm1Lq5RNyVbNpuEXhJML6LPBKsEFCyE_f215HXJ2TUtsUhTkdD9VJhwVZz948dq1ZjXQIEdYRgbZ5HZVhft9j1LG1rCPHYDBLBAqtbCM_ZOhj_fwaXc4rmeHHCuqqmgeuxpHQBuDU61sxCNtiMK&q=homunculus+loxodontus&sa=X&ved=2ahUKEwikqK7AmLmRAxX_AtsEHbJBIC0QtKgLegQIFxAB&biw=1920&bih=945&dpr=1"
+                  aria-label="Facebook"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a
+                  target="_blank"
+                  href="https://www.google.com/search?sca_esv=0cd21280a133ee01&sxsrf=AE3TifOq5XvUzs42ACA1Q8O9Z_zPLiSHOw:1765581733471&udm=2&fbs=AIIjpHzZzB2ZqEE71Te1HhZB2eS5CB8DXh_Vz1MtU1PbrsfE5evFSw0z9rcUb0iAP2Q2MBk54AvObt4DR69vsBH9RvnhpA50etHoLGYWuDeKcLgleW_bn8eYGMm1Lq5RNyVbNpuEXhJML6LPBKsEFCyE_f215HXJ2TUtsUhTkdD9VJhwVZz948dq1ZjXQIEdYRgbZ5HZVhft9j1LG1rCPHYDBLBAqtbCM_ZOhj_fwaXc4rmeHHCuqqmgeuxpHQBuDU61sxCNtiMK&q=homunculus+loxodontus&sa=X&ved=2ahUKEwikqK7AmLmRAxX_AtsEHbJBIC0QtKgLegQIFxAB&biw=1920&bih=945&dpr=1"
+                  aria-label="Twitter"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a
+                  target="_blank"
+                  href="https://www.google.com/search?sca_esv=0cd21280a133ee01&sxsrf=AE3TifOq5XvUzs42ACA1Q8O9Z_zPLiSHOw:1765581733471&udm=2&fbs=AIIjpHzZzB2ZqEE71Te1HhZB2eS5CB8DXh_Vz1MtU1PbrsfE5evFSw0z9rcUb0iAP2Q2MBk54AvObt4DR69vsBH9RvnhpA50etHoLGYWuDeKcLgleW_bn8eYGMm1Lq5RNyVbNpuEXhJML6LPBKsEFCyE_f215HXJ2TUtsUhTkdD9VJhwVZz948dq1ZjXQIEdYRgbZ5HZVhft9j1LG1rCPHYDBLBAqtbCM_ZOhj_fwaXc4rmeHHCuqqmgeuxpHQBuDU61sxCNtiMK&q=homunculus+loxodontus&sa=X&ved=2ahUKEwikqK7AmLmRAxX_AtsEHbJBIC0QtKgLegQIFxAB&biw=1920&bih=945&dpr=1"
+                  aria-label="YouTube"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="footer-box">
+              <div class="footer-head">Contact</div>
+              <a class="footer-email" href="mailto:info@travel.com">info@travel.com</a>
+              <a class="footer-phone" href="tel:+01483593284">+ 01 483 593 284</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

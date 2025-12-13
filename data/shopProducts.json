@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Baggage Insurance",
+    "price": 50,
+    "img": "./images/carousel1.jpg",
+    "badge": "",
+    "action": "add",
+    "display": "$ 50.00"
+  },
+  {
+    "name": "Health Insurance",
+    "price": 20,
+    "img": "./images/gallery3.jpg",
+    "badge": "",
+    "action": "add",
+    "display": "$ 20.00"
+  },
+  {
+    "name": "Medical Insurance",
+    "price": 45,
+    "img": "./images/gallery2.jpg",
+    "badge": "SALE!",
+    "action": "add",
+    "display": "$ 45.00"
+  },
+  {
+    "name": "Tour Operator Liability",
+    "price": 70,
+    "img": "./images/carousel2.jpg",
+    "badge": "SALE!",
+    "action": "add",
+    "display": "$ 70.00 - $ 45.00"
+  },
+  {
+    "name": "Trip Cancellation Insurance",
+    "price": 80,
+    "img": "./images/carousel3.jpg",
+    "badge": "",
+    "action": "add",
+    "display": "$ 30.00"
+  },
+  {
+    "name": "Visitor Insurance",
+    "price": 80,
+    "img": "./images/gallery1.jpg",
+    "badge": "",
+    "action": "select",
+    "display": "$ 50.00 - $ 80.00",
+    "variants": [50, 80]
+  }
+]

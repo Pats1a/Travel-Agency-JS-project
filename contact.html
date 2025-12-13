@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Agency - Contact Us</title>
+    <link rel="icon" type="image/png" href="./images/patarakaci.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body class="contact-page">
+    <header class="header">
+      <div class="container header-row">
+        <a class="logo" href="./index.html">
+          <img class="logo-img" src="./images/navbarlogoia.png" alt="Travel Agency" />
+        </a>
+
+        <nav class="nav" id="mainNav">
+          <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="./packages.html">Packages</a></li>
+            <li class="nav-item"><a class="nav-link" href="./prices.html">Prices</a></li>
+            <li class="nav-item"><a class="nav-link" href="./shop.html">Shop</a></li>
+            <li class="nav-item"><a class="nav-link is-active" href="./contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button class="hamburger" id="hamburgerBtn" type="button" aria-label="Menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <button class="search-btn" id="searchBtn" type="button">Search</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="contact-hero">
+        <div class="contact-hero-inner">
+          <h1 class="contact-hero-title">Contact Us</h1>
+        </div>
+      </section>
+
+      <section class="contact-top">
+        <div class="container">
+          <div class="contact-top-grid">
+            <div class="ct-col">
+              <div class="ct-head">
+                <div class="ct-ico ct-ico-gray ct-ico-green"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="ct-head-title">Location</div>
+              </div>
+
+              <div class="ct-block">
+                <div class="ct-label">Travel Agency</div>
+                <div class="ct-text">123 Smith Street, Miami Beach</div>
+                <div class="ct-text">Florida - United States</div>
+              </div>
+
+              <div class="ct-block">
+                <div class="ct-label">Travel Operator</div>
+                <div class="ct-text">203 Fancy Office Blvd</div>
+                <div class="ct-text">Florida - United States</div>
+              </div>
+            </div>
+
+            <div class="ct-col">
+              <div class="ct-head">
+                <div class="ct-ico ct-ico-greenSolid"><i class="fa-solid fa-phone"></i></div>
+                <div class="ct-head-title">Give us a call</div>
+              </div>
+
+              <div class="ct-block">
+                <div class="ct-label">Mobile Number</div>
+                <div class="ct-text">Any Mobile Tech Consultant: +1 483 942 2593</div>
+              </div>
+
+              <div class="ct-block">
+                <div class="ct-label">Office Number</div>
+                <div class="ct-text">Technical Office: +1 833 954 9836</div>
+              </div>
+            </div>
+
+            <div class="ct-col">
+              <div class="ct-head">
+                <div class="ct-ico ct-ico-dark"><i class="fa-solid fa-envelope"></i></div>
+                <div class="ct-head-title">Write for anything</div>
+              </div>
+
+              <div class="ct-block">
+                <div class="ct-label">Quotes</div>
+                <div class="ct-text">Write to this email for a detailed quotation</div>
+                <div class="ct-text">quote@travel.com and information.</div>
+              </div>
+
+              <div class="ct-block">
+                <div class="ct-label">Consulting</div>
+                <div class="ct-text">Our free consultation service can be requested here</div>
+                <div class="ct-text">info@travel.com every day.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="contact-map">
+        <div class="container">
+          <div class="get-card">
+            <div class="get-script">Plan your Next Trip</div>
+            <div class="get-title">Get in Touch</div>
+            <div class="get-text">
+              Write to us for personalized travel advice or for information on group travel <br />
+              and <span class="get-mark">last minute travel</span>, all travel is insured and safe.
+            </div>
+
+            <form class="get-form" id="contactForm">
+              <input class="get-input" id="cName" type="text" placeholder="Type your name" />
+              <input class="get-input" id="cEmail" type="email" placeholder="Insert your email" />
+              <textarea class="get-area" id="cMsg" placeholder=""></textarea>
+              <button class="get-btn" type="submit">Submit</button>
+              <div class="contact-msg" id="contactMsg"></div>
+            </form>
+          </div>
+        </div>
+
+        <div class="map-wrap">
+          <iframe
+            class="map-frame"
+            title="Map"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=London%20Eye&output=embed"
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="footer-banner">
+        <div class="container footer-row">
+          <div class="footer-left">
+            <h2 class="footer-title">
+              Travel beyond your <br />
+              imagination, with our <br />
+              Travel Agency!
+            </h2>
+          </div>
+
+          <div class="footer-right">
+            <div class="footer-box">
+              <div class="footer-head">Address</div>
+              <div class="footer-text">1080 Brickell Ave</div>
+              <div class="footer-text">Miami - Florida</div>
+              <div class="footer-text">U.S. of America</div>
+
+              <div class="footer-social">
+                <a
+                  target="_blank"
+                  href="https://www.google.com/search?sca_esv=0cd21280a133ee01&sxsrf=AE3TifOq5XvUzs42ACA1Q8O9Z_zPLiSHOw:1765581733471&udm=2&fbs=AIIjpHzZzB2ZqEE71Te1HhZB2eS5CB8DXh_Vz1MtU1PbrsfE5evFSw0z9rcUb0iAP2Q2MBk54AvObt4DR69vsBH9RvnhpA50etHoLGYWuDeKcLgleW_bn8eYGMm1Lq5RNyVbNpuEXhJML6LPBKsEFCyE_f215HXJ2TUtsUhTkdD9VJhwVZz948dq1ZjXQIEdYRgbZ5HZVhft9j1LG1rCPHYDBLBAqtbCM_ZOhj_fwaXc4rmeHHCuqqmgeuxpHQBuDU61sxCNtiMK&q=homunculus+loxodontus&sa=X&ved=2ahUKEwikqK7AmLmRAxX_AtsEHbJBIC0QtKgLegQIFxAB&biw=1920&bih=945&dpr=1"
+                  aria-label="Facebook"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a
+                  target="_blank"
+                  href="https://www.google.com/search?sca_esv=0cd21280a133ee01&sxsrf=AE3TifOq5XvUzs42ACA1Q8O9Z_zPLiSHOw:1765581733471&udm=2&fbs=AIIjpHzZzB2ZqEE71Te1HhZB2eS5CB8DXh_Vz1MtU1PbrsfE5evFSw0z9rcUb0iAP2Q2MBk54AvObt4DR69vsBH9RvnhpA50etHoLGYWuDeKcLgleW_bn8eYGMm1Lq5RNyVbNpuEXhJML6LPBKsEFCyE_f215HXJ2TUtsUhTkdD9VJhwVZz948dq1ZjXQIEdYRgbZ5HZVhft9j1LG1rCPHYDBLBAqtbCM_ZOhj_fwaXc4rmeHHCuqqmgeuxpHQBuDU61sxCNtiMK&q=homunculus+loxodontus&sa=X&ved=2ahUKEwikqK7AmLmRAxX_AtsEHbJBIC0QtKgLegQIFxAB&biw=1920&bih=945&dpr=1"
+                  aria-label="Twitter"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a
+                  target="_blank"
+                  href="https://www.google.com/search?sca_esv=0cd21280a133ee01&sxsrf=AE3TifOq5XvUzs42ACA1Q8O9Z_zPLiSHOw:1765581733471&udm=2&fbs=AIIjpHzZzB2ZqEE71Te1HhZB2eS5CB8DXh_Vz1MtU1PbrsfE5evFSw0z9rcUb0iAP2Q2MBk54AvObt4DR69vsBH9RvnhpA50etHoLGYWuDeKcLgleW_bn8eYGMm1Lq5RNyVbNpuEXhJML6LPBKsEFCyE_f215HXJ2TUtsUhTkdD9VJhwVZz948dq1ZjXQIEdYRgbZ5HZVhft9j1LG1rCPHYDBLBAqtbCM_ZOhj_fwaXc4rmeHHCuqqmgeuxpHQBuDU61sxCNtiMK&q=homunculus+loxodontus&sa=X&ved=2ahUKEwikqK7AmLmRAxX_AtsEHbJBIC0QtKgLegQIFxAB&biw=1920&bih=945&dpr=1"
+                  aria-label="YouTube"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="footer-box">
+              <div class="footer-head">Contact</div>
+              <a class="footer-email" href="mailto:info@travel.com">info@travel.com</a>
+              <a class="footer-phone" href="tel:+01483593284">+ 01 483 593 284</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
